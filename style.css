@@ -1,3 +1,8 @@
+body{
+    background-color: rgb(81, 166, 241);
+    display: list-item;
+}
+
 .card{
     border: 1px solid black;
     border-radius: 16px;
@@ -31,7 +36,6 @@
 
 .button-container{
     display: flex;
-    flex-direction: column;
     gap: 32px;
 }
 
@@ -41,4 +45,9 @@
     gap: 16x;
     align-items: flex-start;
     padding: 16px;
+}
+
+.loading-pizza{
+    height: 30px;
+    display: none;
 }

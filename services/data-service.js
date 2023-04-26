@@ -11,4 +11,9 @@ class DataService{
         .then(resp => resp.json());
     }
 
+    static postSerie(serie){
+        const jsonSerie = JSON.stringify(serie);
+        return fetch(this.DATA_URL, {method: 'POST', headers: {'content-type': 'application/json'}, body: jsonSerie})
+        .then(resp => resp.json());
+    }
 }

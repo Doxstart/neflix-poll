@@ -8,15 +8,25 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Netflix Poll</h1>
+    <h1>Netflix Poll
+        <img id="loading-icon" class="loading-pizza" src="./assets/pizza.gif" alt="">
+    </h1>
     <div>
         <button onclick="sortCollectionByTitle()">Order by Title</button>
         <button onclick="sortCollectionByUpVotes()">Order by Upvotes</button>
         <button onclick="sortCollectionByDownVotes()">Order by Downvotes</button>
         <button onclick="sortCollectionByRating()">Order by Ranking</button>
     </div>
+    <p id="error-message"></p>
     <div id="series-container">
         
+    </div>
+    <div>
+        <span>Insert Title</span>
+        <input type="text" id="title-input">
+        <span>Insert Creator</span>
+        <input type="text" id="creator-input">
+        <button onclick="saveNewSerie()">Save</button>
     </div>
 </body>
 <script src="./model/serie.js"></script>
